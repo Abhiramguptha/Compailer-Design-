@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char c;
+    int valid = 1;
+
+    printf("Enter an arithmetic operator: ");
+    scanf("%c", &c);
+
+    switch(c) {
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+            printf("Valid operator\n");
+            break;
+        default:
+            printf("Invalid operator\n");
+            valid = 0;
+            break;
+    }
+
+    return valid;
+}
